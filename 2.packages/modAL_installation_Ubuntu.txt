@@ -1,0 +1,64 @@
+Instructions for modAL installation on linux/Ubuntu 16.04:
+
+https://github.com/modAL-python/modAL#installation
+
+modAL requires:
+Python >= 3.5
+NumPy >= 1.13
+SciPy >= 0.18
+scikit-learn >= 0.18
+
+You can install numpy, scipy, and scikit-learn by
+pip install numpy
+pip install scipy
+pip install scikit-learn
+And that should install the latest version. 
+
+You can install modAL directly with pip:
+pip install modAL
+
+Alternatively, you can install modAL directly from source:
+pip install git+https://github.com/modAL-python/modAL.git
+
+You can check the version of modAL by: 
+pip freeze | grep modAL
+And you should see: 
+modAL==0.3.4
+
+Important note!!
+After installing modAL, find the modAL directory, you can do it by using locate command, e.g.
+locate -b modAL
+And copy the entire modAL directory to your working directory
+
+For example, in my case, 
+The modAL directory is located at 
+/home/notebooklinda/Documents/02-750_automation_of_biological_research/TA/activelr/lib/python3.5/site-packages/modAL
+And my working directory is
+/home/notebooklinda/Documents/02-750_automation_of_biological_research/TA
+So I need to copy modAL directory to my working directory, and after that, if you do locate -b modAL again, you will be able to see 
+/home/notebooklinda/Documents/02-750_automation_of_biological_research/TA/modAL
+
+You can verify the successful installation of modAL by trying import modAL
+
+###################################################################################################################################################
+Installation of python3.5 or python 3.6 on linux/Ubuntu 16.04:
+To install python3.6 or python 3.6 globally, you can run the following command:
+sudo apt-get update
+sudo apt-get install python3.5 or sudo apt-get install python3.6
+
+I recommend using virtualenv to make an isolate python environment. It creates isolated environments for your python application and allows you to install python libraries in that isolated environment instead of installing them globally. 
+If you have not installed virtualenv yet, you can do so by typing the following command:
+pip install virtualenv
+
+To create a virtualenv with python3.5 or python 3.6:
+virtualenv --python=python3.5 your_env_name or virtualenv --python=python3.6 your_env_name
+
+To activate your virtualenv:
+source your_env_name/bin/activate
+
+Once you enter your virtualenv, you should be able to see your_env_name inside parentheses in the terminal. 
+You can simply install any python packages or libraries using pip install package_name/library_name. 
+
+To deactivate your virtualenv:
+deactivate
+
