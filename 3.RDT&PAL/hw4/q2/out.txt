@@ -1,0 +1,18 @@
+Number of Queries:  proactive
+[349, 1]
+Number of Queries:  uniform
+[350]
+Number of Queries:  random
+[118, 100]
+Number of Queries:  proactive
+[99, 71]
+Number of Queries:  uniform
+[137]
+Number of Queries:  random
+[67, 63]
+Number of Queries:  proactive
+[9, 144]
+Number of Queries:  uniform
+[62]
+Number of Queries:  random
+[37, 48]

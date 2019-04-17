@@ -1,0 +1,11 @@
+Max depth: 3
+Building tree
+Total number of nodes: 85
+plotting all samples
+pruning tree
+Number of nodes in pruned tree: 37
+plotting post-pruning samples
+refining tree
+plotting post-refinement samples
+Number of deepest leaves:  208
+The R2 value on test data is:  0.8684621510786305
